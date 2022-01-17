@@ -40,3 +40,11 @@ hr {
 .welcome-sign h1 {
     font-size: 42px;
 }
+@media only screen and (min-resolution: 150dpi) {
+    .welcome-sign {
+        width: 500px;
+    }
+    .welcome-sign h1 {
+        font-size: 60px;
+    }
+}
