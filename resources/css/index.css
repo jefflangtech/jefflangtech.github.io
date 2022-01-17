@@ -1,1 +1,42 @@
-/* CSS rules for index.html */
+body {
+    margin: 0;
+    text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Arvo", Serif;
+}
+p {
+    font-family: "Lato", sans-serif;
+}
+.top-block {
+    height: 200px;
+}
+.in-progress {
+    height: 400px;
+}
+.color-bar {
+    background-color: hsl(31, 88%, 63%, 1);
+    position: relative;
+    height: 10px;
+}
+hr {
+    height: 1px;
+    background-color:hsl(31, 88%, 63%, 1);
+    border: none;
+}
+.welcome-sign {
+    border: 3px solid hsl(31, 88%, 63%, 1);
+    background-color: hsl(0, 0%, 100%, 1);
+    position: relative;
+    top: -60px;
+    margin: auto;
+    width: 300px;
+}
+.welcome-sign h1 {
+    font-size: 42px;
+}
