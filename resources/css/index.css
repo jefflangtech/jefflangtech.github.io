@@ -40,6 +40,10 @@ hr {
 .welcome-sign h1 {
     font-size: 42px;
 }
+@media only screen and (orientation: portrait) {
+    .top-block {
+        height: 500px;
+    }
 @media only screen and (min-resolution: 150dpi) {
     .welcome-sign {
         width: 500px;
