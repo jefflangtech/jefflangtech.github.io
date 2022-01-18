@@ -39,6 +39,7 @@ hr {
 }
 .welcome-sign h1 {
     font-size: 42px;
+    color: hsl(224, 27%, 20%, 1);
 }
 @media only screen 
     and (min-resolution: 150dpi) 
