@@ -1,0 +1,31 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+div {
+  columns: 3;
+  widows: 3;
+  orphans 2;
+  margin: 20px 0px;
+}
+p {
+  margin: 0;
+}
+.hero p {
+  margin: 16px 0;
+}
+.container-1 {
+  width: 480px;
+  background-color: lightgoldenrodyellow;
+}
+.container-2 {
+  width: 600px;
+  background-color: lightgoldenrodyellow;
+}
+.container-3 {
+  width: 800px;
+  background-color: lightgoldenrodyellow;
+}
+.container-4 {
+  width: 1024px;
+  background-color: lightgoldenrodyellow;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" 
+  rel="stylesheet">
+  <link href="resources/css/widows_orphans.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="hero">
+    <h1>Using CSS: <code>widows</code>, <code>orphans</code> and <code>&amp;nbsp;</code></h1>
+    <p>A widow is a fragment of text that is stranded at the <em>top</em>
+      of a column, while an orphan is stranded at the <em>bottom</em>. Another thing 
+      that can happen with text formatting is the final word being stranded. The issue becomes extra tricky because of responsive web page design and dealing with so many different screen sizes.</p>
+    <p>Below are some text examples distributed across three divs of varying widths  containing three columns. The first rule was to set <code>widows: 3;</code> which had an effect on the final column in the third example. (This text is at the top of that column.) The next trick was to insert a non-breaking space, or <code>&amp;nbsp;</code> between the final two words, the effect which can be seen in the first and last examples. The second example did not require adjustments.</p>
+    <p>The final example is interesting because <code>widows: 3;</code> and <code>orphans: 3;</code> which appears to be restricting the first and third columns to a minimum of three lines of text. With not enough text to adequately fill the columns, the second column is shrunk to two lines only.</p>
+  </header>
+  <div class="container-1">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nostrum non iste ex, temporibus tempore tempora consequuntur qui dignissimos ullam in vero aperiam? Eum accusantium non natus nihil, consectetur voluptatum molestias, facilis dicta, doloremque fugit dignissimos in libero? Illo temporibus nulla enim, deleniti neque&nbsp;ex.</p>
+  </div>
+  <div class="container-2">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nostrum non iste ex, temporibus tempore tempora consequuntur qui dignissimos ullam in vero aperiam? Eum accusantium non natus nihil, consectetur voluptatum molestias, facilis dicta, doloremque fugit dignissimos in libero? Illo temporibus nulla enim, deleniti neque&nbsp;ex.</p>
+  </div>
+  <div class="container-3">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nostrum non iste ex, temporibus tempore tempora consequuntur qui dignissimos ullam in vero aperiam? Eum accusantium non natus nihil, consectetur voluptatum molestias, facilis dicta, doloremque fugit dignissimos in libero? Illo temporibus nulla enim, deleniti neque&nbsp;ex.</p>
+  </div>
+  <div class="container-4">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nostrum non iste ex, temporibus tempore tempora consequuntur qui dignissimos ullam in vero aperiam? Eum accusantium non natus nihil, consectetur voluptatum molestias, facilis dicta, doloremque fugit dignissimos in libero? Illo temporibus nulla enim, deleniti neque&nbsp;ex.</p>
+  </div>
+</body>
+</html>
