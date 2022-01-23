@@ -1,0 +1,85 @@
+/* Font-Family: 'Roboto Condensed', Sans-Serif;
+Font-Size: 35px;
+Font-Family: 'Cabin', Sans-Serif;
+Font-Size: 16px; */
+
+* {
+  box-sizing: border-box;
+  font-smooth: always;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  width: 600px;
+  color: hsl(224, 27%, 20%, 1);
+  background-color: hsl(224, 27%, 20%, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: hsl(224, 27%, 20%, 1);
+}
+
+p,
+label {
+  font-family: 'Cabin', sans-serif;
+}
+
+.color-bar {
+  background-color: hsl(31, 88%, 63%, 1);
+  position: relative;
+  height: 10px;
+  top: 42px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  margin-left: 20px;
+  position: relative;
+  border: 1px solid hsl(31, 88%, 63%, 1);
+  background-color: hsl(0, 0%, 100%, 1);
+  width: 60%;
+  text-align: center;
+}
+
+.hero p {
+  padding: 0 25px;
+  color:hsl(0, 0%, 89%, 1);
+  text-align: justify;
+}
+
+.container {
+  border: 1px solid hsl(224, 27%, 20%, 1);
+  margin: 40px 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%, 1);
+}
+
+.container h2 {
+  position: relative;
+  top: -30px;
+  font-size: 1.25rem;
+  border: 1px solid hsl(224, 27%, 20%, 1);
+  display: inline-block;
+  background-color:hsl(36, 44%, 86%, 1);
+  padding: 3px 10px;
+  margin-bottom: 0;
+}
+
+input {
+  accent-color: hsl(18, 69%, 58%, 1);
+}
+
+progress {
+  accent-color: hsl(18, 69%, 58%, 1);
+}

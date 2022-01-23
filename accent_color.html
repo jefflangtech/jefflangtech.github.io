@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources/css/accent_color.css">
+  <link rel="shortcut icon" href="resources/images/gears_icon_wht.png">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|
+  Roboto+Condensed:400,700" rel="stylesheet">
+  <title>Playing with Accent Colors</title>
+</head>
+<body>
+  <header class="hero">  
+    <div class="color-bar"> </div>
+    <h1>CSS: accent-color</h1>
+    <p>The accent-color CSS property is used to set the...wait for it...accent
+      color of the radio, checkbox, and range input elements, as well as the 
+      progress indicator element.
+    </p>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Checkbox Examples</h2>
+      <form class="checkbox-form">
+        <div>
+          <input type="checkbox" id="checkbox-1" name="one">
+          <label for="one">Checkbox 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox-2" name="two">
+          <label for="two">Checkbox 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox-3" name="three">
+          <label for="three">Checkbox 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox-4" name="four">
+          <label for="four">Checkbox 4</label>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <h2>Radio Button Examples</h2>
+      <form class="radio-form">
+        <div>
+          <input type="radio" id="radio-1" name="radio-form" value="one">
+          <label for="one">Radio Button 1</label>
+        </div>
+        <div>
+          <input type="radio" id="radio-2" name="radio-form" value="two">
+          <label for="two">Radio Button 2</label>
+        </div>
+        <div>
+          <input type="radio" id="radio-3" name="radio-form" value="three">
+          <label for="three">Radio Button 3</label>
+        </div>
+        <div>
+          <input type="radio" id="radio-4" name="radio-form" value="four">
+          <label for="four">Radio Button 4</label>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <h2>Range Slider</h2>
+      <div>
+        <input type="range" id="slider" name="slide-the-glide" min="0"
+        max="100" value="50" step="1">
+        <label for="slide-the-glide">Range Selector</label>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Progress Indicator</h2>
+      <br />
+      <progress id="download" max="100" value="50">50%</progress>
+      <label for="download">Downloading...</label>
+    </div>
+  </main>
+
+</body>
+</html>
