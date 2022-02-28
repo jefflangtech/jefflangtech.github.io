@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- All assets property of Procore.
+Redesign for educational purposes only
+Markup and design by Jeff Lang -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <title>Procore Contact Us (Redesign)</title>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <span class="logo">Procore</span>
+            <button>Request Demo</button>
+        </nav>
+        <div class="hero">
+            <h1>Talk to a Procore expert now.</h1>
+            <img src="scott-blake-x-ghf9LjrVg-unsplash.jpg" alt="">
+            <!-- Photo by <a href="https://unsplash.com/@sunburned_surveyor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Blake</a> on Unsplash -->
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="flex-item">
+                <h2>How can we help you?</h2>
+                <p>Questions, interest in a new tool, feedback—we’re here to help with it all.</p>
+                <h3>Talk with our sales team.</h3>
+                <p>Interested in seeing our products in action or have questions about pricing? Send us a request and a sales representative will follow up with you as soon as possible.</p>
+                <p>Monday-Friday: 8:00 AM - 5:00 PM PT</p>
+                <a href="#phone">(866) 477-6267</a>
+                <h3>Contact our world-class customer support team.</h3>
+                <p>If you are an existing customer with technical issues and general inquiries, please visit the <a href="#support">Procore Support Center.</a></p>
+            </div>
+            <div class="flex-item">
+                <form action="">
+                    <h2>Contact Us</h2>
+                    <label for="dept" required>Select Department</label>
+                    <select name="dept" id="dept">
+                        <option value="">Select Department...</option>
+                        <option value="sales">Sales</option>
+                        <option value="support">Support</option>
+                        <option value="press">Press & Media Inquires</option>
+                        <option value="security">Security</option>
+                    </select>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" required>
+                    <label for="lname"></label>
+                    <input type="text" id="lname" required>
+                    <label for="email"></label>
+                    <input type="email" id="email" required>
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="tel" id="tel" patter="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label for="company">Company Name</label>
+                    <input type="text" name="company" id="company">
+                    <label for="company-type" required>Company Type</label>
+                    <select name="company-type" id="company-type">
+                        <option value="">Select...</option>
+                        <option value="gen">General Contractor</option>
+                        <option value="spec">Specialty Contractor</option>
+                        <option value="owner">Owner or Developer</option>
+                        <option value="gov">Government</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="comments">Comments/Questions</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    <button type="" id="send-request">Send Request</button>
+                </form>
+                <p>By clicking this button, you agree to our <a href="#privacy">Privacy Notice</a> and <a href="#terms">Terms of Service.</a></p>
+            </div>
+        </section>
+        <section class="locations">
+            <h2>Our Offices</h2>
+            <div class="location">
+                <img src="jeff-w-8PX-jC_8Mck-unsplash.jpg" alt="">
+                <p class="region">United States</p>
+                <p class="city">Headquarters</p>
+                <p class="address">6309 Carpinteria Avenue
+                    Carpinteria, CA 93013</p>
+            </div>
+            <div class="location">
+                <img src="mj-tangonan-wKfTNWaDYgs-unsplash.jpg" alt="">
+                <p class="region">United States</p>
+                <p class="city">Austin</p>
+                <p class="address">221 W 6th St, Suite 1800
+                    Austin, TX 78701</p>
+            </div>
+            <div class="location">
+                <img src="michael-discenza-5omwAMDxmkU-unsplash.jpg" alt="">
+                <p class="region">United States</p>
+                <p class="city">New York</p>
+                <p class="address">32 Old Slip, 36th Floor
+                    New York, NY 10005</p>
+            </div>
+            <div class="location">
+                <img src="peter-bucks-4A56VJzKh2c-unsplash.jpg" alt="">
+                <p class="region">United States</p>
+                <p class="city">Portland</p>
+                <p class="address">120 NW 14th Ave, Suite 300
+                    Portland, OR 97209</p>
+            </div>
+        </section>
+        <footer>
+            <section class="footer-links">
+                <div class="links">
+                    <h5>Products</h5>
+                    <a href="#">Platform Overview</a>
+                    <a href="#">Accounting Integrations</a>
+                    <a href="#">Analytics</a>
+                </div>
+                <div class="links">
+                    <h5>Solutions</h5>
+                    <a href="#">General Contractors</a>
+                    <a href="#">Owners</a>
+                    <a href="#">Subcontractors</a>
+                </div>
+                <div class="links">
+                    <h5>Resources</h5>
+                    <a href="#">Resource Center</a>
+                    <a href="#">Building Inclusion</a>
+                    <a href="#">Certifications</a>
+                </div>
+            </section>
+            <nav class="legal">
+                <p>2022 Procore Technologies, Inc.</p>
+                <ul>
+                    <li><a href="#">Network</a></li>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Do Not Sell Personal Information</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    
+</body>
+</html>
