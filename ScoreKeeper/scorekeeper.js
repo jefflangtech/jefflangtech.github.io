@@ -64,7 +64,6 @@ function initializeGame(game, player, num = 2) {
     }
 
     // Initialize properties for game object
-    gameObj.state = false
     gameObj.scoreSelect = document.querySelector('#max-score')
     gameObj.setScoreMax()
     gameObj.resetButton = document.querySelector('#reset')
