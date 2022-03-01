@@ -34,10 +34,8 @@ function resetScoreKeeper() {
     maxScore[0] = 6
     scoreOne.innerText = scores[0]
     scoreTwo.innerText = scores[1]
-    scoreOne.classList.remove('loser')
-    scoreOne.classList.remove('winner')
-    scoreTwo.classList.remove('loser')
-    scoreTwo.classList.remove('winner')
+    scoreOne.classList.remove('winner', 'loser')
+    scoreTwo.classList.remove('winner', 'loser')
     btnControls.item(0).disabled = false
     btnControls.item(0).classList.remove('player-1-disabled')
     btnControls.item(0).classList.add('player-1')

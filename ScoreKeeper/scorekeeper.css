@@ -1,0 +1,137 @@
+html {
+    font-size: 16px;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.app {
+    width: 500px;
+    background-color:rgb(240, 240, 240);
+    border: 1px solid rgb(212, 212, 212);
+    border-bottom: none;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    border-bottom: 1px solid rgb(212, 212, 212); 
+}
+
+.title h1 {
+    font-size: 1.75rem;
+    margin: 0.2rem 0.7rem;
+}
+
+.screen {
+    padding: 0 0.7rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.screen h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.screen span {
+    font-size: 5rem;
+    margin: 0 1rem;
+}
+
+.screen p {
+    margin: 0.2rem 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form > label {
+    font-size: 1.75rem;
+}
+
+select {
+    margin-left: 0.5rem;
+    width: 5rem;
+    padding: 0.25rem;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.controls button {
+    flex-grow: 1;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.2rem;
+}
+
+.winner {
+    color:#059862;
+}
+
+.loser {
+    color:rgb(255, 76, 52);
+}
+
+.player-1-disabled {
+    background-color: rgba(0, 128, 128, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.player-2-disabled {
+    background-color: rgba(59, 105, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.player-1 {
+    background-color: rgba(0, 128, 128, 1);
+}
+
+.player-1:hover {
+    background-color: rgb(0, 197, 197);
+    cursor: pointer;
+}
+
+.player-2 {
+    background-color: rgb(59, 105, 255);
+}
+
+.player-2:hover {
+    background-color: rgb(117, 149, 255);
+    cursor: pointer;
+}
+
+.reset {
+    background-color: rgb(255, 76, 52);
+    flex-grow: 2;
+}
+
+.reset:hover {
+    background-color: rgb(255, 125, 108);
+    cursor: pointer;
+}
