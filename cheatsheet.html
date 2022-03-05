@@ -8,37 +8,72 @@
     <link rel="stylesheet" href="primary.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
+    <header>
         <h1>Cheat Sheet</h1>
-        <h2>Buttons and such...</h2>
-        <div class="buttons-1">
-            <h3>Toggle Switch</h3>
-            <!-- First toggle -->
-            <label for="toggle-button">Turn me on!</label>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <input type="hidden" value="" id="toggle-button-1" name="toggle-1">
+    </header>
+    <main>
+        <section>
+            <h2>Buttons and such...</h2>
+            <div class="container">
+                <h3>Toggle Switch</h3>
+                <!-- First toggle -->
+                <label for="toggle-button">Turn me on!</label>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <input type="hidden" value="" id="toggle-button-1" name="toggle-1">
+                    </div>
                 </div>
-            </div>
-            <!-- Second toggle -->
-            <label for="toggle-button">Doesn't work yet</label>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <input type="hidden" value="" id="toggle-button-2" name="toggle-2">
+                <!-- Second toggle -->
+                <label for="toggle-button">Doesn't work yet</label>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <input type="hidden" value="" id="toggle-button-2" name="toggle-2">
+                    </div>
                 </div>
-            </div>
-            <!-- Third toggle -->
-            <label for="toggle-button">Doesn't work yet</label>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <input type="hidden" value="" id="toggle-button-3" name="toggle-3">
+                <!-- Third toggle -->
+                <label for="toggle-button">Doesn't work yet</label>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <input type="hidden" value="" id="toggle-button-3" name="toggle-3">
+                    </div>
                 </div>
+            </div>   
+        </section>
+        <section>
+            <h2>JavaScript Code Snippets</h2>
+            <div class="container">
+                <h3>Forms and escaping submit</h3>
+                <p class="js-code"><code>const form = document.querySelector('#searchForm');<br>
+                    form.addEventListener('submit', async function(event) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<mark>event.preventDefault()</mark><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const searchTerm = form.elements.query.value<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const config = { params: { q: searchTerm } }<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const res = await axios.get(`http://api.tvmaze.com/search/shows`, config)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;makeImages(res.data)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;form.elements.query.value = ''<br>
+                    })</code></p>
             </div>
-
-        </div>  
+            <div class="container">
+                <h3>Class and Object Construction</h3>
+                <p class="js-code"><code>class ClassObj {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;constructor(params) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.param = params<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.func() // optional methods<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;someOtherMethod() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const methodLogic<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;anotherMethod() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const methodLogic<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+                <br>
+                const newObj = new ClassObj(params)</code></p>
+            </div>
+        </section>
     </main>
     <script src="cheatsheet.js"></script>
 </body>

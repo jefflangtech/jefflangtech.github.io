@@ -14,7 +14,17 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: -0.01rem;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 300;
 }
 
 main {
@@ -22,16 +32,23 @@ main {
     padding: 0 1rem;
 }
 
-.buttons-1 {
+.container {
     width: 100%;
     border: 1px solid black;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.buttons-1 h3 {
+.container h3 {
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.js-code {
+    text-align: left;
+    padding-left: 2rem;
 }
 
 .toggle-container {
