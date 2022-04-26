@@ -73,6 +73,33 @@
                 <br>
                 const newObj = new ClassObj(params)</code></p>
             </div>
+            <div class="container">
+                <h3>Accordion Menu/File Controls</h3>
+                <p class="js-code"><code>const controls = document.querySelectorAll('.section-title')<br><br>
+                    controls.forEach(control => {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;control.addEventListener('click', function() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let controlIcon = control.children[1]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let content = this.nextElementSibling<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(content.style.maxHeight) {<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.style.maxHeight = null<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.style.opacity = 0<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controlIcon.style.transform = 'rotate(0turn)'<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.style.maxHeight = content.scrollHeight + "px"<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content.style.opacity = 1<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controlIcon.style.transform = 'rotate(-0.5turn)'<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;})<br>
+
+                    })<br>
+
+                    </code></p>
+            </div>
         </section>
     </main>
     <script src="cheatsheet.js"></script>
