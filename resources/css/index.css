@@ -10,14 +10,21 @@ h5,
 h6 {
     font-family: "Arvo", Serif;
 }
-p {
+p, a {
     font-family: "Lato", sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
+a {
+    text-decoration: none;
+    color: hsl(224, 27%, 20%, 1);
+}
+
 .top-block {
-    height: 200px;
+    height: 150px;
 }
 .in-progress {
-    height: 400px;
+    margin-top: 8rem;
 }
 .color-bar {
     background-color: hsl(31, 88%, 63%, 1);
@@ -35,11 +42,60 @@ hr {
     position: relative;
     top: -60px;
     margin: auto;
-    width: 300px;
+    width: 450px;
 }
 .welcome-sign h1 {
     font-size: 42px;
     color: hsl(224, 27%, 20%, 1);
+}
+#headshot {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.links {
+    margin-bottom: 2rem;
+}
+.links a {
+    color: hsl(0, 0%, 100%, 1);
+    background-color: hsl(224, 27%, 20%, 1);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.links a:hover {
+    background-color: rgb(71, 76, 90);
+}
+.journey {
+    margin-bottom: 2rem;
+}
+.projects-sign {
+    border: 3px solid hsl(31, 88%, 63%, 1);
+    background-color: hsl(0, 0%, 100%, 1);
+    position: relative;
+    top: -37px;
+    margin: auto;
+    width: 300px;
+}
+.project-title {
+    display: block;
+    font-size: 1.2rem;
+}
+.project-details {
+    font-size: 0.8rem;
+}
+.project-container img {
+    max-width: 60vw;
+    filter: drop-shadow(0 0 0.5rem hsla(0, 0%, 0%, 0.5));
+}
+footer {
+    font-family: "Lato", sans-serif;
+    margin-top: 5rem;
+    background-color: hsl(224, 27%, 20%, 1);
+    color: hsl(0, 0%, 100%, 1);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 @media only screen 
     and (min-resolution: 150dpi) 
