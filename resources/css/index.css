@@ -97,6 +97,9 @@ footer {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
+footer p {
+    /* for test only */
+}
 @media only screen 
     and (min-resolution: 150dpi) 
     and (orientation: portrait) {
