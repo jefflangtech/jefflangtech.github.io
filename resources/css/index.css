@@ -91,26 +91,40 @@ hr {
 }
 footer {
     font-family: "Lato", sans-serif;
-    margin-top: 5rem;
+    margin-top: 15rem;
     background-color: hsl(224, 27%, 20%, 1);
     color: hsl(0, 0%, 100%, 1);
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
-footer p {
-    /* for test only */
-}
 @media only screen 
     and (min-resolution: 150dpi) 
     and (orientation: portrait) {
     .top-block {
-        height: 700px;
+        height: 300px;
+    }
+    .projects {
+        text-align: center;
+    }
+    .me-intro {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     .welcome-sign {
-        width: 500px;
+        width: 600px;
         top: -90px;
     }
     .welcome-sign h1 {
         font-size: 60px;
+    }
+    .in-progress {
+        margin-bottom: 5rem;
+    }
+    .projects-sign h2 {
+        font-size: 2rem;
+    }
+    .project-title {
+        font-size: 1rem;
+        padding
     }
 }
