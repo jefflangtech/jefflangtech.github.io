@@ -20,6 +20,46 @@ a {
     color: hsl(224, 27%, 20%, 1);
 }
 
+header {
+    min-height: 50px;
+    background-color: hsl(224, 27%, 20%, 1);
+    position: relative;
+    border-bottom: 10px solid hsl(31, 88%, 63%, 1);
+    margin-bottom: 8rem;
+}
+
+.title {
+    background-color: hsl(0, 0%, 100%, 1);
+    border: 3px solid hsl(31, 88%, 63%, 1);
+    padding-inline: 3rem;
+    max-width: 450px;
+    position: absolute;
+    z-index: 50;
+    left: 4rem;
+    top: 1.65rem;
+    text-align: left;
+}
+
+.title h1 {
+    margin: 0;
+    padding-top: 0.25rem;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.title p {
+    margin-top: 0;
+}
+
+header hr {
+    position: absolute;
+    top: 60px;
+    height: 1px;
+    width: 100vw;
+    background-color:hsl(31, 88%, 63%, 1);
+    border: none;
+}
+
 .top-block {
     height: 150px;
 }
@@ -48,6 +88,12 @@ hr {
     font-size: 42px;
     color: hsl(224, 27%, 20%, 1);
 }
+.intro-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 #headshot {
     width: 150px;
     border-radius: 50%;
@@ -75,7 +121,8 @@ hr {
     background-color: hsl(0, 0%, 100%, 1);
     position: relative;
     top: -37px;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 4rem;
     width: 300px;
 }
 .project-title {
@@ -88,6 +135,7 @@ hr {
 .project-container img {
     max-width: 60vw;
     filter: drop-shadow(0 0 0.5rem hsla(0, 0%, 0%, 0.5));
+    margin-bottom: 3rem;
 }
 footer {
     font-family: "Lato", sans-serif;
