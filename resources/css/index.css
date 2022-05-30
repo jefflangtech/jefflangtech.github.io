@@ -90,8 +90,10 @@ hr {
 }
 .intro-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    padding-inline: 8rem;
+    gap: 20%;
 }
 
 #headshot {
@@ -133,7 +135,8 @@ hr {
     font-size: 0.8rem;
 }
 .project-container img {
-    max-width: 60vw;
+    width: 80vw;
+    max-width: 1000px;
     filter: drop-shadow(0 0 0.5rem hsla(0, 0%, 0%, 0.5));
     margin-bottom: 3rem;
 }
